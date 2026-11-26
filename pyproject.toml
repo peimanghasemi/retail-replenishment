@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retailrep"
+version = "0.1.0"
+description = "Demand forecasting, store replenishment and promotion allocation for a grocery discounter"
+authors = [{ name = "Peiman Ghasemi" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "duckdb"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
