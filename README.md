@@ -77,9 +77,3 @@ scripts/run_all.py   full pipeline
 tests/               unit tests (look-ahead, stock balance, allocation)
 results/             outputs of the last run
 ```
-
-## Limitations
-
-* **Synthetic data.** Real store-item-day data with promotions and shelf lives is not public. The generator is built to show realistic patterns, but absolute numbers will differ on real data.
-* **Demand versus sales.** The model is trained on true demand. In a real store only sales are observed, and sales are cut off when the shelf is empty. With real data the stockout days need to be corrected (unconstraining) before training, otherwise the forecast learns the stockouts.
-* **Simplifications.** The simulation uses daily delivery and a lead time of one day, ignores pack sizes, minimum order quantities and shelf capacity, and has no substitution between items. These are the next things I would add.
