@@ -1,0 +1,10 @@
+model,subset,WAPE,bias
+Seasonal naive (last week),all days,0.5638236380100045,-0.00863414183860957
+Seasonal naive (last week),promotion days,0.5582030410253729,-0.4781626024762801
+Seasonal naive (last week),regular days,0.5651346630003022,0.1008851044683478
+"Same-weekday mean, 4 weeks",all days,0.4500866491133988,-0.007117919717975543
+"Same-weekday mean, 4 weeks",promotion days,0.5273613846716982,-0.4951441785338702
+"Same-weekday mean, 4 weeks",regular days,0.4320620318507506,0.10671600628287294
+Gradient boosting (Poisson),all days,0.3405284041984353,-0.0012116689864481336
+Gradient boosting (Poisson),promotion days,0.3170882506852139,-0.009614637181324699
+Gradient boosting (Poisson),regular days,0.3459959065146972,0.0007483543573857346
